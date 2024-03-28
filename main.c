@@ -1,4 +1,5 @@
 #include "monty.h"
+#include <stdio.h>
 
 /**
  * error_handle - prints error message and exits
@@ -39,7 +40,7 @@ int main(int argc, char **argv)
 
 	global.data_struct = 1;
 	if (argc != 2)
-		error_usage();
+		error_handle();
 
 	file = fopen(argv[1], "r");
 
